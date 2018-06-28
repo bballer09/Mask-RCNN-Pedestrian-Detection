@@ -1,11 +1,12 @@
 # Mask R-CNN based Pedestrian Detection
 In this implementation, a Pedestrian Detection Algortihm is proposed based on Dense Optical Flow and Particle Filtering.
-The details can be referred to in the attached [report](https://github.com/sahibdhanjal/Mask-RCNN-Pedestrian-Detection/blob/master/assets/Mask%20R-CNN%20Based%20Pedestrian%20Tracking.pdf). To run the algorithm using:
+To run the algorithm using:
 
-1. Laptop Webcam: use [main.py](https://github.com/sahibdhanjal/Mask-RCNN-Pedestrian-Detection/blob/master/main.py)
-2. IP Streaming using a SmartPhone: use [mainLive.py](https://github.com/sahibdhanjal/Mask-RCNN-Pedestrian-Detection/blob/master/mainLive.py)
+1. Laptop Webcam: use [main.py](https://github.com/bballer09/Mask-RCNN-Pedestrian-Detection/blob/master/main.py)
+2. IP Streaming using a SmartPhone: use [mainLive.py](https://github.com/bballer09/Mask-RCNN-Pedestrian-Detection/blob/master/mainLive.py)
+3. File Conversion: use [mainFle.py](https://github.com/bballer09/Mask-RCNN-Pedestrian-Detection/blob/master/mainFile.py)
 
-For making sure that your smartphone is connected to the laptop and streaming the video, run [VoIP.py](https://github.com/sahibdhanjal/Mask-RCNN-Pedestrian-Detection/blob/master/VoIP.py) first. To visualize dense and sparse optical flow, run [opticalFlow.py](https://github.com/sahibdhanjal/Mask-RCNN-Pedestrian-Detection/blob/master/opticalFlow.py)
+For making sure that your smartphone is connected to the laptop and streaming the video, run [VoIP.py](https://github.com/bballer09/Mask-RCNN-Pedestrian-Detection/blob/master/VoIP.py) first. To visualize dense and sparse optical flow, run [opticalFlow.py](https://github.com/bballer09/Mask-RCNN-Pedestrian-Detection/blob/master/opticalFlow.py)
 
 # Requirements
 * Python 3.4+
@@ -25,7 +26,7 @@ For making sure that your smartphone is connected to the laptop and streaming th
 4. (Optional) Install IP Webcam on your phone for live tracking
 
 # Mask R-CNN
-This implementation is forked from the implementation of the algorithm by [MatterPort](https://github.com/matterport/Mask_RCNN)
+This implementation is forked from the implementation of the algorithm by [sahibdhanjal](https://github.com/sahibdhanjal/Mask-RCNN-Pedestrian-Detection)
 
 ## Mask R-CNN for Object Detection and Segmentation
 
@@ -153,10 +154,6 @@ Contributions to this repository are welcome. Examples of things you can contrib
 * Training on other datasets.
 * Accuracy Improvements.
 * Visualizations and examples.
-
-You can also [join our team](https://matterport.com/careers/) and help us build even more projects like this one.
-
-
 
 #### MS COCO Requirements:
 To train or test on MS COCO, you'll also need:
