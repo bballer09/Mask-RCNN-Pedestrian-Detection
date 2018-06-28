@@ -4,8 +4,9 @@ To run the algorithm using:
 
 1. Laptop Webcam: use [main.py](https://github.com/bballer09/Mask-RCNN-Pedestrian-Detection/blob/master/main.py)
 2. IP Streaming using a SmartPhone: use [mainLive.py](https://github.com/bballer09/Mask-RCNN-Pedestrian-Detection/blob/master/mainLive.py)
-3. File Conversion: use [mainFle.py](https://github.com/bballer09/Mask-RCNN-Pedestrian-Detection/blob/master/mainFile.py)
-```Run the file as 
+3. File Conversion: use [mainFile.py](https://github.com/bballer09/Mask-RCNN-Pedestrian-Detection/blob/master/mainFile.py)
+```
+Run the file as 
 python3 mainFile.py -i <filename>
 ```
 
