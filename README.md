@@ -9,7 +9,7 @@ To run the algorithm using:
 Run the file as 
 python3 mainFile.py -i <filename>
 ```
-
+All the three code keep on saving each frame in the [Output/] directory.
 For making sure that your smartphone is connected to the laptop and streaming the video, run [VoIP.py](https://github.com/bballer09/Mask-RCNN-Pedestrian-Detection/blob/master/VoIP.py) first. To visualize dense and sparse optical flow, run [opticalFlow.py](https://github.com/bballer09/Mask-RCNN-Pedestrian-Detection/blob/master/opticalFlow.py)
 
 # Requirements
@@ -84,6 +84,11 @@ TensorBoard is another great debugging and visualization tool. The model is conf
 
 ![](assets/detection_final.png)
 
+## Creation of video
+We can create a output video file by running [Output/conv.py] file to get a video output of the Project. 
+```
+python3 Output/conv.py -ext jpg -o <output file name>
+```
 
 ## Training on MS COCO
 We're providing pre-trained weights for MS COCO to make it easier to start. You can
