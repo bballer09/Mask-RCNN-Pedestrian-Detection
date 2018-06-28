@@ -86,7 +86,7 @@ if __name__ == '__main__':
 
     # Block for IP Streaming
 
-    url = "35.3.71.126:8080"
+    url = "10.10.8.59:8080"
     link = 'http://' + url + '/video'
     print('Streaming from: ' + link)
 

@@ -6,7 +6,7 @@ import numpy as np
 import skimage.io
 import matplotlib
 import matplotlib.pyplot as plt
-
+import argparse
 # RCNN Dependencies
 import utils
 import coco
@@ -22,7 +22,10 @@ import urllib.request as urllib2
 # particle filter dependencies
 import particle
 import particleFilter as pf
-
+ap = argparse.ArgumentParser()
+ap.add_argument("-i", "--input", required=False, default='png', help="Location of the file.")
+args = vars(ap.parse_args())
+DIR=args['input']
 if __name__ == '__main__':
     # Root directory of the project
     ROOT_DIR = os.getcwd()
@@ -80,7 +83,7 @@ if __name__ == '__main__':
     size = (16, 16)
     fig, ax = plt.subplots(1, figsize = size)
 
-    cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture(DIR)
 
     # Uncomment the following snippet for testing it on the video in test
     # cap = cv2.VideoCapture('test/Pedestrian overpass.mp4')
@@ -103,7 +106,7 @@ if __name__ == '__main__':
     while(cap.isOpened()):
         ret, frame = cap.read()
         start = time.time()
-        cv2.imwrite('Input\im%d.jpg'%no,frame)
+        cv2.imwrite('Input/im%d.jpg'%no,frame)
 
         ##################################################
         # Calculate Optical Flow

@@ -73,7 +73,7 @@ def apply_mask(image, mask, color, alpha=0.5):
     return image
 
 
-def display_instances(image, boxes, masks, class_ids, class_names,
+def display_instances(image,no, boxes, masks, class_ids, class_names,
                       scores=None, title="",
                       figsize=(16, 16), ax=None, fig=None):
     """
@@ -147,7 +147,7 @@ def display_instances(image, boxes, masks, class_ids, class_names,
                 ax.add_patch(p)
     ax.imshow(masked_image.astype(np.uint8))
     plt.show()
-    plt.pause(0.01)
+    plt.savefig('Output/plt%d.jpg'%no,bbox_inches='tight')
     ax.clear()
 
 def draw_rois(image, rois, refined_rois, mask, class_ids, class_names, limit=10):
